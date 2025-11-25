@@ -1,3 +1,8 @@
+{{ config(
+    alias = "BIKE_DATE"
+) }}
+
+
 SELECT
     RIDE_ID,
     DATEDIFF('minute', started_at, ended_at) AS minute_difference,
