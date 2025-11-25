@@ -1,0 +1,12 @@
+{{ config(
+    alias = "START_BIKE_STATION_INFO"
+) }}
+
+select 
+
+START_STATION_ID,
+START_STATION_NAME,
+START_LATITUDE,
+START_LONGITUDE
+
+FROM {{ source('DBT_SRC', 'BIKE_RIDES') }}
