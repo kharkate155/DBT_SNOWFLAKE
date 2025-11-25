@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: DBT_SRC          
+    database: DBT_DB    
+    schema: DBT_SRC        
+    tables:
+      - name: BIKE_RIDES   
